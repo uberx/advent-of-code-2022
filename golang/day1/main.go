@@ -11,6 +11,7 @@ import (
 
 func main() {
 	input := util.ReadFile("day1.txt")
+
 	answer1 := maxTotalCalories(input)
 	fmt.Println("Part 1:", answer1)
 
