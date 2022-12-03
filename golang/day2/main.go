@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/uberx/advent-of-code-2022/util"
 )
@@ -31,25 +32,31 @@ var loseConditions = map[string]string{
 }
 
 func main() {
+	start := time.Now()
 	input := util.ReadFile("day2.txt")
+	fileReadDuration := time.Since(start)
 
-	answer1 := totalMyRPSScore1(input)
-	fmt.Println("Part 1:", answer1)
+	answer1, parseDuration1, partDuration1 := totalMyRPSScore1(input)
+	totalPartDuration1 := time.Duration(fileReadDuration.Nanoseconds() + parseDuration1.Nanoseconds() + partDuration1.Nanoseconds())
+	fmt.Printf("Part 1 (totalMyRPSScore1): %d (%s - fileReadDuration: %s, parseDuration: %s, partDuration: %s)\n", answer1, totalPartDuration1, fileReadDuration, parseDuration1, partDuration1)
 
-	answer2 := totalMyRPSScore2(input)
-	fmt.Println("Part 2:", answer2)
+	answer2, parseDuration2, partDuration2 := totalMyRPSScore2(input)
+	totalPartDuration2 := time.Duration(fileReadDuration.Nanoseconds() + parseDuration2.Nanoseconds() + partDuration2.Nanoseconds())
+	fmt.Printf("Part 2 (totalMyRPSScore2): %d (%s - fileReadDuration: %s, parseDuration: %s, partDuration: %s)\n", answer2, totalPartDuration2, fileReadDuration, parseDuration2, partDuration2)
 }
 
-func totalMyRPSScore1(input string) int {
-	rpsRounds := parseInput1(input)
+func totalMyRPSScore1(input string) (int, time.Duration, time.Duration) {
+	start := time.Now()
+	rpsRounds, parseDuration := parseInput1(input)
 
-	return totalMyRPSScore(rpsRounds)
+	return totalMyRPSScore(rpsRounds), parseDuration, time.Since(start)
 }
 
-func totalMyRPSScore2(input string) int {
-	rpsRounds := parseInput2(input)
+func totalMyRPSScore2(input string) (int, time.Duration, time.Duration) {
+	start := time.Now()
+	rpsRounds, parseDuration := parseInput2(input)
 
-	return totalMyRPSScore(rpsRounds)
+	return totalMyRPSScore(rpsRounds), parseDuration, time.Since(start)
 }
 
 func totalMyRPSScore(rpsRounds []RockPaperScissorsRound) int {
@@ -96,15 +103,19 @@ func rpsChoice(choice string) string {
 	return choice
 }
 
-func parseInput1(input string) (rpsRounds []RockPaperScissorsRound) {
+func parseInput1(input string) ([]RockPaperScissorsRound, time.Duration) {
+	start := time.Now()
+	rpsRounds := []RockPaperScissorsRound{}
 	for _, rpsRound := range strings.Split(input, "\n") {
 		roundChoices := strings.Split(rpsRound, " ")
 		rpsRounds = append(rpsRounds, RockPaperScissorsRound{apponentChoice: roundChoices[0], myChoice: roundChoices[1]})
 	}
-	return rpsRounds
+	return rpsRounds, time.Since(start)
 }
 
-func parseInput2(input string) (rpsRounds []RockPaperScissorsRound) {
+func parseInput2(input string) ([]RockPaperScissorsRound, time.Duration) {
+	start := time.Now()
+	rpsRounds := []RockPaperScissorsRound{}
 	for _, rpsRound := range strings.Split(input, "\n") {
 		roundChoices := strings.Split(rpsRound, " ")
 
@@ -119,5 +130,5 @@ func parseInput2(input string) (rpsRounds []RockPaperScissorsRound) {
 		}
 		rpsRounds = append(rpsRounds, RockPaperScissorsRound{opponentChoice, myChoice})
 	}
-	return rpsRounds
+	return rpsRounds, time.Since(start)
 }
