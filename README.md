@@ -1,12 +1,11 @@
 # Advent of Code 2022
 
 ## GoLang
-`cd golang`  
-`go run dayX/main.go`
+/path/advent-of-code-2022 > `cd golang`  
+/path/advent-of-code-2022/golang > `go run dayX/main.go`
 
 ### Results
-`cd golang`  
-`./run-all.sh`
+/path/advent-of-code-2022 > `./golang/run-all.sh`
 
 ```
 ADVENT OF CODE 2022
