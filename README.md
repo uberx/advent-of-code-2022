@@ -30,4 +30,8 @@ Part 2 (totalPartiallyOverlappingAssignmentPairs): 938 (439µs - fileReadDuratio
 ========== Part 5 ==========
 Part 1 (topOfEachStack1): VWLCWGSDQ (257.8µs - fileReadDuration: 26µs, parseDuration: 220.5µs, partDuration: 11.3µs)
 Part 2 (topOfEachStack2): TCGLQSLPW (230.6µs - fileReadDuration: 26µs, parseDuration: 196.8µs, partDuration: 7.8µs)
+
+========== Part 6 ==========
+Part 1 (startOfPacketMarker): 1658 (69.8µs - fileReadDuration: 20µs, parseDuration: 9.3µs, partDuration: 40.5µs)
+Part 2 (startOfMessageMarker): 2260 (85µs - fileReadDuration: 20µs, parseDuration: 14.2µs, partDuration: 50.8µs)
 ```
