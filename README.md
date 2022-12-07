@@ -33,4 +33,8 @@ Part 2 (topOfEachStack2): TCGLQSLPW (230.6µs - fileReadDuration: 26µs, parseDu
 ========== Part 6 ==========
 Part 1 (startOfPacketMarker): 1658 (69.8µs - fileReadDuration: 20µs, parseDuration: 9.3µs, partDuration: 40.5µs)
 Part 2 (startOfMessageMarker): 2260 (85µs - fileReadDuration: 20µs, parseDuration: 14.2µs, partDuration: 50.8µs)
+
+========== Part 7 ==========
+Part 1 (totalSizeOfDirsWithAtmostGivenSize): 1453349 (155.1µs - fileReadDuration: 22.2µs, parseDuration: 106.5µs, partDuration: 26.4µs)
+Part 2 (smallestSizeOfDirToDelete): 2948823 (132.9µs - fileReadDuration: 22.2µs, parseDuration: 86.9µs, partDuration: 23.8µs)
 ```
