@@ -37,4 +37,8 @@ Part 2 (startOfMessageMarker): 2260 (85µs - fileReadDuration: 20µs, parseDurat
 ========== Part 7 ==========
 Part 1 (totalSizeOfDirsWithAtmostGivenSize): 1453349 (155.1µs - fileReadDuration: 22.2µs, parseDuration: 106.5µs, partDuration: 26.4µs)
 Part 2 (smallestSizeOfDirToDelete): 2948823 (132.9µs - fileReadDuration: 22.2µs, parseDuration: 86.9µs, partDuration: 23.8µs)
+
+========== Part 8 ==========
+Part 1 (numVisibleTrees): 1827 (739.9µs - fileReadDuration: 27.4µs, parseDuration: 207.4µs, partDuration: 505.1µs)
+Part 2 (highestTreeScenicScore): 335580 (511.6µs - fileReadDuration: 27.4µs, parseDuration: 196.7µs, partDuration: 287.5µs)
 ```
