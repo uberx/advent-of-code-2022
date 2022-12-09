@@ -41,4 +41,8 @@ Part 2 (smallestSizeOfDirToDelete): 2948823 (132.9µs - fileReadDuration: 22.2µ
 ========== Part 8 ==========
 Part 1 (numVisibleTrees): 1827 (739.9µs - fileReadDuration: 27.4µs, parseDuration: 207.4µs, partDuration: 505.1µs)
 Part 2 (highestTreeScenicScore): 335580 (511.6µs - fileReadDuration: 27.4µs, parseDuration: 196.7µs, partDuration: 287.5µs)
+
+========== Part 9 ==========
+Part 1 (numPositionsVisitedByTail1): 6314 (826.6µs - fileReadDuration: 23.5µs, parseDuration: 150.7µs, partDuration: 652.4µs)
+Part 2 (numPositionsVisitedByTail2): 2504 (1.4759ms - fileReadDuration: 23.5µs, parseDuration: 147µs, partDuration: 1.3054ms)
 ```
