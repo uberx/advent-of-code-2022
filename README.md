@@ -45,4 +45,16 @@ Part 2 (highestTreeScenicScore): 335580 (511.6µs - fileReadDuration: 27.4µs, p
 ========== Part 9 ==========
 Part 1 (numPositionsVisitedByTail1): 6314 (826.6µs - fileReadDuration: 23.5µs, parseDuration: 150.7µs, partDuration: 652.4µs)
 Part 2 (numPositionsVisitedByTail2): 2504 (1.4759ms - fileReadDuration: 23.5µs, parseDuration: 147µs, partDuration: 1.3054ms)
+
+========== Part 10 ==========
+Part 1 (sumOfSixSignalStrengths): 14040 (59µs - fileReadDuration: 19.4µs, parseDuration: 18.5µs, partDuration: 21.1µs)
+Part 2 (crtOutput):
+####..##...##....##.####...##.####.#....
+...#.#..#.#..#....#....#....#.#....#....
+..#..#....#.......#...#.....#.###..#....
+.#...#.##.#.......#..#......#.#....#....
+#....#..#.#..#.#..#.#....#..#.#....#....
+####..###..##...##..####..##..#....####.
+
+(58.9µs - fileReadDuration: 19.4µs, parseDuration: 11.6µs, partDuration: 27.9µs)
 ```
