@@ -57,4 +57,8 @@ Part 2 (crtOutput):
 ####..###..##...##..####..##..#....####.
 
 (58.9µs - fileReadDuration: 19.4µs, parseDuration: 11.6µs, partDuration: 27.9µs)
+
+========== Part 11 ==========
+Part 1 (monkeyBusiness1): 51075 (91.5µs - fileReadDuration: 22.2µs, parseDuration: 7.5µs, partDuration: 61.8µs)
+Part 2 (monkeyBusiness2): 11741456163 (29.3214ms - fileReadDuration: 22.2µs, parseDuration: 5.9µs, partDuration: 29.2933ms)
 ```
