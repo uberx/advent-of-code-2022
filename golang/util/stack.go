@@ -21,3 +21,11 @@ func (s *Stack[T]) Pop() (element T, popped bool) {
 	}
 	return element, popped
 }
+
+func (s *Stack[T]) Peek() (element T, available bool) {
+	if !s.IsEmpty() {
+		element = s.elements[len(s.elements)-1]
+		available = true
+	}
+	return element, available
+}

@@ -65,4 +65,8 @@ Part 2 (monkeyBusiness2): 11741456163 (29.3214ms - fileReadDuration: 22.2µs, pa
 ========== Part 12 ==========
 Part 1 (fewestStepsFromStartToEnd): 481 (6.2314ms - fileReadDuration: 28.7µs, parseDuration: 43.3µs, partDuration: 6.1594ms)
 Part 2 (fewestStepsFromEndToAnyLowestElevationPoint): 480 (2.8549ms - fileReadDuration: 28.7µs, parseDuration: 47.9µs, partDuration: 2.7783ms)
+
+========== Part 13 ==========
+Part 1 (sumOfIndicesOfPacketPairsInRightOrder): 6076 (1.2027ms - fileReadDuration: 36.2µs, parseDuration: 1.1589ms, partDuration: 7.6µs)
+Part 2 (distressSignalDecoderKey): 24805 (1.2722ms - fileReadDuration: 36.2µs, parseDuration: 1.1347ms, partDuration: 101.3µs)
 ```
