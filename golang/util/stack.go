@@ -14,7 +14,7 @@ func (s *Stack[T]) Push(element T) {
 
 func (s *Stack[T]) Pop() (element T, popped bool) {
 	if !s.IsEmpty() {
-		index := len(s.elements) - 1.
+		index := len(s.elements) - 1
 		element = s.elements[index]
 		s.elements = s.elements[:index]
 		popped = true
