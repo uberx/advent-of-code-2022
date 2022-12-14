@@ -69,4 +69,8 @@ Part 2 (fewestStepsFromEndToAnyLowestElevationPoint): 480 (2.8549ms - fileReadDu
 ========== Part 13 ==========
 Part 1 (sumOfIndicesOfPacketPairsInRightOrder): 6076 (1.2027ms - fileReadDuration: 36.2µs, parseDuration: 1.1589ms, partDuration: 7.6µs)
 Part 2 (distressSignalDecoderKey): 24805 (1.2722ms - fileReadDuration: 36.2µs, parseDuration: 1.1347ms, partDuration: 101.3µs)
+
+========== Part 14 ==========
+Part 1 (sandParticlesAtRest1): 745 (3.9437ms - fileReadDuration: 29.8µs, parseDuration: 228.2µs, partDuration: 3.6857ms)
+Part 2 (sandParticlesAtRest2): 27551 (206.2247ms - fileReadDuration: 29.8µs, parseDuration: 218.2µs, partDuration: 205.9767ms)
 ```
