@@ -73,4 +73,8 @@ Part 2 (distressSignalDecoderKey): 24805 (1.2722ms - fileReadDuration: 36.2µs, 
 ========== Part 14 ==========
 Part 1 (sandParticlesAtRest1): 745 (3.9437ms - fileReadDuration: 29.8µs, parseDuration: 228.2µs, partDuration: 3.6857ms)
 Part 2 (sandParticlesAtRest2): 27551 (206.2247ms - fileReadDuration: 29.8µs, parseDuration: 218.2µs, partDuration: 205.9767ms)
+
+========== Part 15 ==========
+Part 1 (numNonViableDistressBeaconPositionsAtRow): 5335787 (105.1µs - fileReadDuration: 21.8µs, parseDuration: 81.4µs, partDuration: 1.9µs)
+Part 2 (distressBeaconTuningFrequency): 13673971349056 (781.1305ms - fileReadDuration: 21.8µs, parseDuration: 43µs, partDuration: 781.0657ms)
 ```
