@@ -8,7 +8,7 @@ func (s *Queue[T]) IsEmpty() bool {
 	return len(s.elements) == 0
 }
 
-func (s *Queue[T]) Queue(element T) {
+func (s *Queue[T]) Enqueue(element T) {
 	s.elements = append(s.elements, element)
 }
 

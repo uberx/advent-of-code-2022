@@ -29,3 +29,7 @@ func (s *Stack[T]) Peek() (element T, available bool) {
 	}
 	return element, available
 }
+
+func (s *Stack[T]) Size() int {
+	return len(s.elements)
+}

@@ -77,4 +77,8 @@ Part 2 (sandParticlesAtRest2): 27551 (206.2247ms - fileReadDuration: 29.8µs, pa
 ========== Part 15 ==========
 Part 1 (numNonViableDistressBeaconPositionsAtRow): 5335787 (105.1µs - fileReadDuration: 21.8µs, parseDuration: 81.4µs, partDuration: 1.9µs)
 Part 2 (distressBeaconTuningFrequency): 13673971349056 (781.1305ms - fileReadDuration: 21.8µs, parseDuration: 43µs, partDuration: 781.0657ms)
+
+========== Part 16 ==========
+Part 1 (maxPressure1): 1857 (191.63ms - fileReadDuration: 20.8µs, parseDuration: 94.9µs, partDuration: 191.5143ms)
+Part 2 (maxPressure2): 2536 (1m26.6179782s - fileReadDuration: 20.8µs, parseDuration: 97.1µs, partDuration: 1m26.6178603s)
 ```

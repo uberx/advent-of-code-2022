@@ -8,11 +8,6 @@ import (
 	"github.com/uberx/advent-of-code-2022/util"
 )
 
-type Pair[T, U any] struct {
-	First  T
-	Second U
-}
-
 func main() {
 	start := time.Now()
 	input := util.ReadFile("day4.txt")
@@ -40,7 +35,7 @@ func totalFullyOverlappingAssignmentPairs(input string) (int, time.Duration, tim
 	return fullyOverlappingAssignmentPairs, parseDuration, time.Since(start)
 }
 
-func pairIsFullyOverlapping(assignmentPair Pair[Pair[int, int], Pair[int, int]]) bool {
+func pairIsFullyOverlapping(assignmentPair util.Pair[util.Pair[int, int], util.Pair[int, int]]) bool {
 	firstPair := assignmentPair.First
 	secondPair := assignmentPair.Second
 	return (firstPair.First >= secondPair.First && firstPair.Second <= secondPair.Second) ||
@@ -60,21 +55,21 @@ func totalPartiallyOverlappingAssignmentPairs(input string) (int, time.Duration,
 	return fullyOverlappingAssignmentPairs, parseDuration, time.Since(start)
 }
 
-func pairIsNotOverlapping(assignmentPair Pair[Pair[int, int], Pair[int, int]]) bool {
+func pairIsNotOverlapping(assignmentPair util.Pair[util.Pair[int, int], util.Pair[int, int]]) bool {
 	firstPair := assignmentPair.First
 	secondPair := assignmentPair.Second
 	return (firstPair.First < secondPair.First && firstPair.Second < secondPair.First) ||
 		(secondPair.First < firstPair.First && secondPair.Second < firstPair.First)
 }
 
-func parseInput(input string) ([]Pair[Pair[int, int], Pair[int, int]], time.Duration) {
+func parseInput(input string) ([]util.Pair[util.Pair[int, int], util.Pair[int, int]], time.Duration) {
 	start := time.Now()
-	assignmentPairs := []Pair[Pair[int, int], Pair[int, int]]{}
+	assignmentPairs := []util.Pair[util.Pair[int, int], util.Pair[int, int]]{}
 	for _, currPair := range strings.Split(input, "\n") {
 		individualPairs := strings.Split(currPair, ",")
 		firstPair := strings.Split(individualPairs[0], "-")
 		secondPair := strings.Split(individualPairs[1], "-")
-		assignmentPairs = append(assignmentPairs, Pair[Pair[int, int], Pair[int, int]]{Pair[int, int]{util.ToInt(firstPair[0]), util.ToInt(firstPair[1])}, Pair[int, int]{util.ToInt(secondPair[0]), util.ToInt(secondPair[1])}})
+		assignmentPairs = append(assignmentPairs, util.Pair[util.Pair[int, int], util.Pair[int, int]]{First: util.Pair[int, int]{First: util.ToInt(firstPair[0]), Second: util.ToInt(firstPair[1])}, Second: util.Pair[int, int]{First: util.ToInt(secondPair[0]), Second: util.ToInt(secondPair[1])}})
 	}
 	return assignmentPairs, time.Since(start)
 }

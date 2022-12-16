@@ -9,11 +9,6 @@ import (
 	"github.com/uberx/advent-of-code-2022/util"
 )
 
-type Pair[T, U any] struct {
-	First  T
-	Second U
-}
-
 type ListItem struct {
 	value *int
 	items *[]ListItem
@@ -117,12 +112,12 @@ func distressSignalDecoderKey(input string) (int, time.Duration, time.Duration) 
 	return decoderPacketIdx1 * decoderPacketIdx2, parseDuration, time.Since(start)
 }
 
-func parseInput(input string) ([]Pair[*ListItem, *ListItem], time.Duration) {
+func parseInput(input string) ([]util.Pair[*ListItem, *ListItem], time.Duration) {
 	start := time.Now()
-	packetPairs := []Pair[*ListItem, *ListItem]{}
+	packetPairs := []util.Pair[*ListItem, *ListItem]{}
 	for _, packetPair := range strings.Split(input, "\n\n") {
 		packetPairLines := strings.Split(packetPair, "\n")
-		packetPairs = append(packetPairs, Pair[*ListItem, *ListItem]{parsePacket(packetPairLines[0]), parsePacket(packetPairLines[1])})
+		packetPairs = append(packetPairs, util.Pair[*ListItem, *ListItem]{parsePacket(packetPairLines[0]), parsePacket(packetPairLines[1])})
 	}
 	return packetPairs, time.Since(start)
 }
