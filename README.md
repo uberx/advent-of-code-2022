@@ -81,4 +81,9 @@ Part 2 (distressBeaconTuningFrequency): 13673971349056 (781.1305ms - fileReadDur
 ========== Part 16 ==========
 Part 1 (maxPressure1): 1857 (191.63ms - fileReadDuration: 20.8µs, parseDuration: 94.9µs, partDuration: 191.5143ms)
 Part 2 (maxPressure2): 2536 (1m26.6179782s - fileReadDuration: 20.8µs, parseDuration: 97.1µs, partDuration: 1m26.6178603s)
+
+========== Part 17 ==========
+Part 1 (rockTowerLength1): 3239 (42.501268ms - fileReadDuration: 129.705µs, parseDuration: 94.461µs, partDuration: 42.277102ms)
+Part 2 (rockTowerLength2): 1594842406882 (39.145005ms - fileReadDuration: 129.705µs, parseDuration: 19.533µs, partDuration: 38.995767ms)
+
 ```

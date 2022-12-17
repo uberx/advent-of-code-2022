@@ -7,3 +7,11 @@ func Reverse[T constraints.Ordered](input []T) {
 		input[i], input[j] = input[j], input[i]
 	}
 }
+
+func Sum[T constraints.Ordered](input []T) T {
+	var sum T
+	for i := 0; i < len(input); i++ {
+		sum += input[i]
+	}
+	return sum
+}
