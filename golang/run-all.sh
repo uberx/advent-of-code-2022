@@ -9,7 +9,7 @@ parent_path=$(
     cd ${parent_path} &&
         (
             echo -e "ADVENT OF CODE 2022\n"
-            for number in {1..17}; do
+            for number in {1..18}; do
                 echo "========== Part ${number} =========="
                 go run day${number}/main.go
                 echo

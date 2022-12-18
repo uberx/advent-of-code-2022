@@ -86,4 +86,7 @@ Part 2 (maxPressure2): 2536 (1m26.6179782s - fileReadDuration: 20.8µs, parseDur
 Part 1 (rockTowerLength1): 3239 (42.501268ms - fileReadDuration: 129.705µs, parseDuration: 94.461µs, partDuration: 42.277102ms)
 Part 2 (rockTowerLength2): 1594842406882 (39.145005ms - fileReadDuration: 129.705µs, parseDuration: 19.533µs, partDuration: 38.995767ms)
 
+========== Part 18 ==========
+Part 1 (lavaDropletsSurfaceArea): 3466 (962.6µs - fileReadDuration: 26.7µs, parseDuration: 217.3µs, partDuration: 718.6µs)
+Part 2 (lavaDropletsExternalSurfaceArea): 2012 (7.6141ms - fileReadDuration: 26.7µs, parseDuration: 295.6µs, partDuration: 7.2918ms)
 ```

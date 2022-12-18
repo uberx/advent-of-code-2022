@@ -10,3 +10,9 @@ type Point struct {
 func ManhattanDistance(a, b Point) int {
 	return mathy.Abs(a.X, b.X) + mathy.Abs(a.Y, b.Y)
 }
+
+type Point3D struct {
+	X int
+	Y int
+	Z int
+}
