@@ -15,3 +15,12 @@ func Sum[T constraints.Ordered](input []T) T {
 	}
 	return sum
 }
+
+func IndexOf[T any](input []T, match T, equalityFunc func(t1, t2 T) bool) int {
+	for k, v := range input {
+		if equalityFunc(match, v) {
+			return k
+		}
+	}
+	return -1
+}

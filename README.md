@@ -89,4 +89,8 @@ Part 2 (rockTowerLength2): 1594842406882 (39.145005ms - fileReadDuration: 129.70
 ========== Part 18 ==========
 Part 1 (lavaDropletsSurfaceArea): 3466 (962.6µs - fileReadDuration: 26.7µs, parseDuration: 217.3µs, partDuration: 718.6µs)
 Part 2 (lavaDropletsExternalSurfaceArea): 2012 (7.6141ms - fileReadDuration: 26.7µs, parseDuration: 295.6µs, partDuration: 7.2918ms)
+
+========== Part 20 ==========
+Part 1 (sumOfNthNumbersAfterZero1): 5498 (86.98ms - fileReadDuration: 26.1µs, parseDuration: 526.7µs, partDuration: 86.4272ms)
+Part 2 (sumOfNthNumbersAfterZero2): 3390007892081 (946.8841ms - fileReadDuration: 26.1µs, parseDuration: 403.6µs, partDuration: 946.4544ms)
 ```

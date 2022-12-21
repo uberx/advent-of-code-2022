@@ -66,7 +66,7 @@ func fewestStepsFromStartToEnd(input string) (int, time.Duration, time.Duration)
 
 func finishedPath(state State, elevationDiffFunc func(diff rune) bool, endConditionFunc func(State, StackItem) bool) StackItem {
 	queue := util.Queue[StackItem]{}
-	queue.Queue(StackItem{state.startPosition, nil, nil, 0})
+	queue.Enqueue(StackItem{state.startPosition, nil, nil, 0})
 	visited := map[Point]int{}
 	for !queue.IsEmpty() {
 		currItem, _ := queue.Dequeue()
@@ -78,7 +78,7 @@ func finishedPath(state State, elevationDiffFunc func(diff rune) bool, endCondit
 			newPathLength := currItem.pathLength + 1
 			if existingPathLength, ok := visited[location]; !ok || newPathLength < existingPathLength {
 				visited[location] = newPathLength
-				queue.Queue(StackItem{location, &currItem, &direction, newPathLength})
+				queue.Enqueue(StackItem{location, &currItem, &direction, newPathLength})
 			}
 		}
 	}
