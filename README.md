@@ -93,4 +93,8 @@ Part 2 (lavaDropletsExternalSurfaceArea): 2012 (7.6141ms - fileReadDuration: 26.
 ========== Part 20 ==========
 Part 1 (sumOfNthNumbersAfterZero1): 5498 (86.98ms - fileReadDuration: 26.1µs, parseDuration: 526.7µs, partDuration: 86.4272ms)
 Part 2 (sumOfNthNumbersAfterZero2): 3390007892081 (946.8841ms - fileReadDuration: 26.1µs, parseDuration: 403.6µs, partDuration: 946.4544ms)
+
+========== Part 21 ==========
+Part 1 (rootMonkeyNumber): 51928383302238 (2.4069ms - fileReadDuration: 26.6µs, parseDuration: 2.1184ms, partDuration: 261.9µs)
+Part 2 (rootMonkeyEqualityTestNumber): 3305669217840 (25.444ms - fileReadDuration: 26.6µs, parseDuration: 2.0344ms, partDuration: 23.383ms)
 ```
