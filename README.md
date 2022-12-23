@@ -97,4 +97,6 @@ Part 2 (sumOfNthNumbersAfterZero2): 3390007892081 (946.8841ms - fileReadDuration
 ========== Part 21 ==========
 Part 1 (rootMonkeyNumber): 51928383302238 (2.4069ms - fileReadDuration: 26.6µs, parseDuration: 2.1184ms, partDuration: 261.9µs)
 Part 2 (rootMonkeyEqualityTestNumber): 3305669217840 (25.444ms - fileReadDuration: 26.6µs, parseDuration: 2.0344ms, partDuration: 23.383ms)
+
+========== Part 22 ==========
 ```
